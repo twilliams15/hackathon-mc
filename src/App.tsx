@@ -31,6 +31,10 @@ function Campaign() {
             .catch(console.error)
     }
 
+    React.useEffect(() => {
+        if (+amount > 1000) setAmount('1000')
+    }, [amount])
+
     // React.useEffect(() => {
     //     fetch('https://ef8bd84ad743.ngrok.app')
     //         .then((res) => res.json())
@@ -38,7 +42,7 @@ function Campaign() {
     // }, [])
 
     return (
-        <div className="App pl-4 pr-4">
+        <div className="app pl-4 pr-4 max-w-2xl m-auto">
             <div className="flex justify-center">
                 <img
                     src="https://logos-world.net/wp-content/uploads/2021/03/GoFundMe-Logo.png"
@@ -82,7 +86,7 @@ function Campaign() {
             )}
             {!showThanks && (
                 <>
-                    <img className="rounded-lg" src="parrot.jpg" alt="parrot" />
+                    <img className="rounded-lg" src="tree.jpg" alt="parrot" />
                     <h1 className="mt-3 text-3xl font-bold">
                         Let’s F’n Goooo!
                     </h1>
@@ -117,7 +121,7 @@ function Campaign() {
                     {showForm && (
                         <div className="flex justify-center mt-6 mb-6">
                             <form>
-                                <label className="text-gray-600 block mb-1 font-semibold">
+                                <label className="text-gray-500 block mb-1 font-semibold">
                                     Donation Amount
                                 </label>
                                 <span
