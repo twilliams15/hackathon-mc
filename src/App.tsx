@@ -5,7 +5,7 @@ function Campaign() {
     const [total, setTotal] = React.useState(0)
     const [donors, setDonors] = React.useState(0)
     const [showForm, setShowForm] = React.useState(false)
-    const [showThanks, setShowThanks] = React.useState(true)
+    const [showThanks, setShowThanks] = React.useState(false)
     const [amount, setAmount] = React.useState('')
     // const [username, setUsername] = React.useState('')
 
@@ -92,7 +92,7 @@ function Campaign() {
                         alt="minecraft giving world"
                     />
                     <h1 className="mt-3 text-3xl font-bold">
-                        Let’s F’n Goooo!
+                        Minecraft Giving Tree
                     </h1>
                     <div className="mt-1">
                         ${+total || 0}{' '}
