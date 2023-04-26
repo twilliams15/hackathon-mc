@@ -145,6 +145,11 @@ function Campaign() {
                     <h1 className="mt-3 text-3xl font-bold">
                         Minecraft Giving Tree
                     </h1>
+                    <progress
+                        className="mt-2 mb-2 w-full bg-gray-500"
+                        value={total}
+                        max="10000"
+                    />
                     <div className="mt-1">
                         ${+total || 0}{' '}
                         <span className="text-gray-500">
