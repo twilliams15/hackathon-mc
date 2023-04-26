@@ -15,8 +15,8 @@ function Campaign() {
     const [showForm, setShowForm] = React.useState(false)
     const [showThanks, setShowThanks] = React.useState(false)
     const [amount, setAmount] = React.useState('')
-    const [username, setUsername] = React.useState(
-        window.location.search.replace('?u=', '')
+    const [player] = React.useState(
+        window.location.search.replace('?player=', '')
     )
 
     const onClickDonate = () => {
@@ -28,7 +28,7 @@ function Campaign() {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ amount, url: 'abc' }),
+            body: JSON.stringify({ amount, player, url: 'abc' }),
         }
         fetch('https://ef8bd84ad743.ngrok.app/donation', requestOptions)
             .then((res) => res.json())
@@ -39,7 +39,6 @@ function Campaign() {
                 setShowThanks(true)
             })
             .catch(console.error)
-        setShowThanks(true)
     }
 
     React.useEffect(() => {
@@ -71,7 +70,7 @@ function Campaign() {
                     </div>
                     <div className="flex justify-center mb-4">
                         <h1 className="font-bold text-xl">
-                            Thanks for donating, {username}
+                            Thanks for donating, {player}
                         </h1>
                     </div>
                     <p className="flex justify-center">
