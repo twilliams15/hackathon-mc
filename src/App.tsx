@@ -71,7 +71,7 @@ function Campaign() {
                     </div>
                     <div className="flex justify-center mb-4">
                         <h1 className="font-bold text-xl">
-                            Thanks for donating, {player}
+                            Thanks for donating, {player || 'friend'}
                         </h1>
                     </div>
                     <p className="flex justify-center">
