@@ -126,7 +126,7 @@ function Campaign() {
                             }}
                             onClick={() => setShowThanks(false)}
                         >
-                            Take me there
+                            Donate again
                         </button>
                         <button
                             className="mt-3 mb-16 pt-3 pb-3 w-full rounded-full font-semibold"
@@ -137,7 +137,7 @@ function Campaign() {
                             }}
                             onClick={() => setShowThanks(false)}
                         >
-                            No thanks
+                            Back to campaign
                         </button>
                     </div>
                 </>
