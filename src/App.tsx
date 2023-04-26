@@ -29,7 +29,11 @@ function Campaign() {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ amount, player, url: 'abc' }),
+            body: JSON.stringify({
+                amount,
+                player: player || 'a friend of GoFundMe',
+                url: 'abc',
+            }),
         }
         fetch('https://ef8bd84ad743.ngrok.app/donation', requestOptions)
             .then((res) => res.json())
