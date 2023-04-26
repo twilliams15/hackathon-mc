@@ -7,7 +7,9 @@ function Campaign() {
     const [showForm, setShowForm] = React.useState(false)
     const [showThanks, setShowThanks] = React.useState(false)
     const [amount, setAmount] = React.useState('')
-    // const [username, setUsername] = React.useState('')
+    const [username, setUsername] = React.useState(
+        window.location.search.replace('?u=', '')
+    )
 
     const onClickDonate = () => {
         setShowForm(true)
