@@ -156,6 +156,7 @@ function Campaign() {
                                     value={amount}
                                     onChange={(e) => setAmount(e.target.value)}
                                     type="number"
+                                    inputMode="tel"
                                 />
                                 <div>
                                     <button
