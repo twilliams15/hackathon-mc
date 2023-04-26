@@ -86,7 +86,11 @@ function Campaign() {
             )}
             {!showThanks && (
                 <>
-                    <img className="rounded-lg" src="tree.jpg" alt="parrot" />
+                    <img
+                        className="rounded-lg"
+                        src="giving-world.png"
+                        alt="minecraft giving world"
+                    />
                     <h1 className="mt-3 text-3xl font-bold">
                         Let’s F’n Goooo!
                     </h1>
