@@ -47,20 +47,27 @@ function Campaign() {
         <div className="app pl-4 pr-4 max-w-2xl m-auto">
             <div className="flex justify-center">
                 <img
-                    src="https://logos-world.net/wp-content/uploads/2021/03/GoFundMe-Logo.png"
+                    className="mt-4 mb-4"
+                    src="gfm-logo.png"
                     width="120px"
                     alt="gofundme logo"
                 />
             </div>
             {showThanks && (
                 <>
-                    <img className="mt-8 mb-8" src="logo-minecraft.svg" />
+                    <div className="flex flex-col">
+                        <img className="mt-8 mb-2" src="gfm-logo.png" />
+                        <p className="m-auto">✖️</p>
+                        <img className="mt-2 mb-8" src="logo-minecraft.svg" />
+                    </div>
                     <div className="flex justify-center mb-4">
                         <h1 className="font-bold text-xl">
-                            Thanks for donating
+                            Thanks for donating, {username}
                         </h1>
                     </div>
-                    <p>Check us out on Minecraft to see your donations grow!</p>
+                    <p className="flex justify-center">
+                        Check us out on Minecraft to see your donations grow!
+                    </p>
                     <div className="mt-12">
                         <button
                             className="pt-3 pb-3 w-full rounded-full font-semibold text-white"
