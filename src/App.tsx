@@ -14,6 +14,7 @@ function Campaign() {
     const [donors, setDonors] = React.useState(0)
     const [showForm, setShowForm] = React.useState(false)
     const [showThanks, setShowThanks] = React.useState(false)
+    const [showShare, setShowShare] = React.useState(false)
     const [amount, setAmount] = React.useState('')
     const [player] = React.useState(
         window.location.search.replace('?player=', '')
@@ -62,6 +63,38 @@ function Campaign() {
                     alt="gofundme logo"
                 />
             </div>
+            {showShare && (
+                <>
+                    <p>
+                        Thanks for wanting to share, but this isn't a real
+                        campaign. Vote for our project if you want to see this
+                        out in the real (and virtual) world(s)
+                    </p>
+                    <div className="mt-12">
+                        <button
+                            className="pt-3 pb-3 w-full rounded-full font-semibold text-white"
+                            type="submit"
+                            style={{
+                                background: '#02a95c',
+                            }}
+                            onClick={() => setShowShare(false)}
+                        >
+                            You have my vote!
+                        </button>
+                        <button
+                            className="mt-3 mb-16 pt-3 pb-3 w-full rounded-full font-semibold"
+                            type="submit"
+                            style={{
+                                border: '1px solid #02a95c',
+                                color: '#02a95c',
+                            }}
+                            onClick={() => setShowShare(false)}
+                        >
+                            You have my vote!
+                        </button>
+                    </div>
+                </>
+            )}
             {showThanks && (
                 <>
                     <div className="flex flex-col">
@@ -102,7 +135,7 @@ function Campaign() {
                     </div>
                 </>
             )}
-            {!showThanks && (
+            {!showThanks && !showShare && (
                 <>
                     <img
                         className="rounded-lg"
@@ -126,6 +159,7 @@ function Campaign() {
                                 background:
                                     'linear-gradient(180deg, #f9db74 0%, #f3bc51 100%)',
                             }}
+                            onClick={() => setShowShare(true)}
                         >
                             Share
                         </button>
