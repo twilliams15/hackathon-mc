@@ -43,6 +43,7 @@ function Campaign() {
 
     React.useEffect(() => {
         if (+amount > 1000) setAmount('1000')
+        if (+amount < 0) setAmount('0')
     }, [amount])
 
     // React.useEffect(() => {
