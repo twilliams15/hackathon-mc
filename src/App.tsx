@@ -52,7 +52,7 @@ function Campaign() {
     }, [amount])
 
     React.useEffect(() => {
-        fetch('https://ef8bd84ad743.ngrok.app')
+        fetch('https://ef8bd84ad743.ngrok.app/donation')
             .then((res) => res.json())
             .then(({ numDonors, total }) => {
                 setDonors(numDonors || 0)
