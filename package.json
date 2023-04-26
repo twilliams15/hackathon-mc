@@ -12,12 +12,12 @@
   "dependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-feather": "2.0.8",
-    "react-scripts": "3.3.0"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
+    "prettier": "2.8.8",
     "typescript": "3.7.5"
   },
   "scripts": {
