@@ -1,6 +1,14 @@
 import * as React from 'react'
 import './styles.css'
 
+import gfmLogo from './gfm-logo.png'
+import givingWorld from './giving-world.png'
+import gw2 from './gw-2.png'
+import gw3 from './gw-3.png'
+import gw4 from './gw-4.png'
+import { ReactComponent as Heart } from './heart.svg'
+import { ReactComponent as Minecraft } from './logo-minecraft.svg'
+
 function Campaign() {
     const [total, setTotal] = React.useState(0)
     const [donors, setDonors] = React.useState(0)
@@ -31,6 +39,7 @@ function Campaign() {
                 setShowThanks(true)
             })
             .catch(console.error)
+        setShowThanks(true)
     }
 
     React.useEffect(() => {
@@ -48,7 +57,7 @@ function Campaign() {
             <div className="flex justify-center">
                 <img
                     className="mt-4 mb-4"
-                    src="gfm-logo.png"
+                    src={gfmLogo}
                     width="120px"
                     alt="gofundme logo"
                 />
@@ -56,9 +65,9 @@ function Campaign() {
             {showThanks && (
                 <>
                     <div className="flex flex-col">
-                        <img className="mt-8 mb-2" src="gfm-logo.png" />
+                        <img className="mt-8 mb-2" src={gfmLogo} />
                         <p className="m-auto">✖️</p>
-                        <img className="mt-2 mb-8" src="logo-minecraft.svg" />
+                        <Minecraft className="mt-2 mb-8" />
                     </div>
                     <div className="flex justify-center mb-4">
                         <h1 className="font-bold text-xl">
@@ -97,7 +106,7 @@ function Campaign() {
                 <>
                     <img
                         className="rounded-lg"
-                        src="giving-world.png"
+                        src={givingWorld}
                         alt="minecraft giving world"
                     />
                     <h1 className="mt-3 text-3xl font-bold">
@@ -149,19 +158,6 @@ function Campaign() {
                                     onChange={(e) => setAmount(e.target.value)}
                                     type="number"
                                 />
-                                {/* <label className="mt-2 text-gray-600 block mb-1 font-semibold">
-                                    Minecraft Username{' '}
-                                    <span className="text-gray-400">
-                                        (optional)
-                                    </span>
-                                </label>
-                                <input
-                                    className="form-input leading-5"
-                                    value={username}
-                                    onChange={(e) =>
-                                        setUsername(e.target.value)
-                                    }
-                                /> */}
                                 <div>
                                     <button
                                         className="mt-6 pt-3 pb-3 w-full rounded-full font-semibold text-white"
@@ -178,11 +174,7 @@ function Campaign() {
                         </div>
                     )}
                     <div className="mt-6">
-                        <img
-                            className="inline mr-2"
-                            src="heart.svg"
-                            alt="icon"
-                        />
+                        <Heart className="inline mr-2" />
                         Team Minecraft is organizing this fundraiser
                     </div>
                     <hr className="mt-6 mb-6" />
@@ -211,7 +203,7 @@ function Campaign() {
                             world was created through a collaboration with
                             GoFundMe.
                         </p>
-                        <img className="mt-8 mb-8" src="gw-2.png" />
+                        <img className="mt-8 mb-8" src={gw2} />
                         <p className="mt-4">
                             Like many streamers, He has a tip button – a Twitch
                             integration with Classy that lets his viewers
@@ -234,7 +226,7 @@ function Campaign() {
                             finds out there are giving regions for a variety of
                             nonprofits.
                         </p>
-                        <img className="mt-8 mb-8" src="gw-3.png" />
+                        <img className="mt-8 mb-8" src={gw3} />
                         <p className="mt-4">
                             Autumn finds a region of Giving Trees created by the
                             american red cross. She steps up to one of the trees
@@ -251,7 +243,7 @@ function Campaign() {
                             After her donation, Autumn is given an exclusive
                             Giving World outfit for her in game avatar.
                         </p>
-                        <img className="mt-8 mb-8" src="gw-4.png" />
+                        <img className="mt-8 mb-8" src={gw4} />
                         <p className="mt-4">
                             She continues to explore The Minecraft Giving World,
                             and other biomes, with more charity and campaign
