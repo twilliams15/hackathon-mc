@@ -51,11 +51,14 @@ function Campaign() {
         if (+amount < 0) setAmount('0')
     }, [amount])
 
-    // React.useEffect(() => {
-    //     fetch('https://ef8bd84ad743.ngrok.app')
-    //         .then((res) => res.json())
-    //         .then(({ total }) => setTotal(total))
-    // }, [])
+    React.useEffect(() => {
+        fetch('https://ef8bd84ad743.ngrok.app')
+            .then((res) => res.json())
+            .then(({ numDonors, total }) => {
+                setDonors(numDonors || 0)
+                setTotal(total || '0')
+            })
+    }, [])
 
     return (
         <div className="app pl-4 pr-4 max-w-2xl m-auto">
