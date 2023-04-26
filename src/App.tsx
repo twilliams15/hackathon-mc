@@ -178,15 +178,76 @@ function Campaign() {
                     </div>
                     <hr className="mt-6 mb-6" />
                     <div className="mb-8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        <p className="mt-4">
+                            Nearly a billion people around the world have
+                            created inspiring, educational and fun experiences
+                            in the Minecraft universe. Autumn hears about a new
+                            collaboration with gofundme.
+                        </p>
+                        <p className="mt-4">
+                            Autumn hears about a new Minecraft server– the
+                            Minecraft Giving World while watching a microsoft
+                            announcement video.
+                        </p>
+                        <p className="mt-4">
+                            She searches on Twitch and finds her favorite
+                            streamer walking through a Minecraft world which
+                            looks like any other at first glance. But there’s a
+                            forest with trees of various sizes - each adorned
+                            with ornaments.
+                        </p>
+                        <p className="mt-4">
+                            The streamer tells his viewers that what they’re
+                            seeing are called “Giving Trees'' and this whole
+                            world was created through a collaboration with
+                            GoFundMe.
+                        </p>
+                        <img className="mt-8 mb-8" src="gw-2.png" />
+                        <p className="mt-4">
+                            Like many streamers, He has a tip button – a Twitch
+                            integration with Classy that lets his viewers
+                            support him by giving to nonprofits. He explains
+                            that a Minecraft Giving Tree is a GoFundMe Campaign.
+                        </p>
+                        <p className="mt-4">
+                            Donations are represented as ornaments, lights,
+                            candles, and decorations on the tree. Autumn notices
+                            that Every time a donation is made, the trees lights
+                            up and that The light on top has a percentage of
+                            light filled, representing percent to goal.
+                        </p>
+                        <p className="mt-4">
+                            Inspired by the stream, Autumn fires up Minecraft
+                            and joins the Giving World server.
+                        </p>
+                        <p className="mt-4">
+                            She explores, interacts with other players, and
+                            finds out there are giving regions for a variety of
+                            nonprofits.
+                        </p>
+                        <img className="mt-8 mb-8" src="gw-3.png" />
+                        <p className="mt-4">
+                            Autumn finds a region of Giving Trees created by the
+                            american red cross. She steps up to one of the trees
+                            and sees a familar minecraft character floating
+                            nearby. She asks it what the campaign is about.
+                        </p>
+                        <p className="mt-4">
+                            After listening to the character share the story,
+                            Autumn places an ornament on the tree. She records a
+                            voice message of support by placing a candle of
+                            support at the base of the tree.
+                        </p>
+                        <p className="mt-4">
+                            After her donation, Autumn is given an exclusive
+                            Giving World outfit for her in game avatar.
+                        </p>
+                        <img className="mt-8 mb-8" src="gw-4.png" />
+                        <p className="mt-4">
+                            She continues to explore The Minecraft Giving World,
+                            and other biomes, with more charity and campaign
+                            partners with a community of thousands of players.
+                        </p>
                     </div>
                 </>
             )}
