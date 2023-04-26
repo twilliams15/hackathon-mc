@@ -89,7 +89,7 @@ function Campaign() {
                             Take me there
                         </button>
                         <button
-                            className="mt-3 pt-3 pb-3 w-full rounded-full font-semibold"
+                            className="mt-3 mb-16 pt-3 pb-3 w-full rounded-full font-semibold"
                             type="submit"
                             style={{
                                 border: '1px solid #02a95c',
